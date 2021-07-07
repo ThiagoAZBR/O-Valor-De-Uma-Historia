@@ -21,4 +21,8 @@
         margin: 0;
     }
 
+    & + .card {
+        margin-top: 20px;
+    }
+
 }

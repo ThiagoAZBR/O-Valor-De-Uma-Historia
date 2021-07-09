@@ -76,7 +76,7 @@ export function Home() {
             date='06 de jul'
             function={getToArticle3}
         />
-    </div>
+      </div>
       </>
     ) : (
       <Article

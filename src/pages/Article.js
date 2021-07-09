@@ -1,8 +1,15 @@
+import '../styles/pages/article.scss';
 import backArrow from '../assets/images/backArrow.svg';
+import { useHistory } from 'react-router-dom';
+import '../styles/pages/article.scss';
 
 export function Article(props) {
+
+    function GetToHome() {
+        window.location.reload();
+    }
     return (
-        <div>
+        <div className='principal'>
             <div className="imageArticle">
                 <img src={props.img} alt='Enter Image' />
             </div>
@@ -15,8 +22,10 @@ export function Article(props) {
                 <h4> {props.body} </h4>
             </div>
             <div className="bottomArticle">
-                <img src={backArrow} alt="Back Arrow" />
-                <h4>Voltar</h4>
+                <div onClick={GetToHome} className="clickBox">
+                    <img src={backArrow} alt="Back Arrow" />
+                    <h4>Voltar</h4>
+                </div>
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Article } from './pages/Article';
 import { Home } from './pages/Home';
 import { Settings } from './pages/Settings';
+import './styles/global.scss';
 
 export const projectContext = createContext({});
 

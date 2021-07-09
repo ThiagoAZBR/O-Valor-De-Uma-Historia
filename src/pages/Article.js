@@ -1,6 +1,5 @@
 import '../styles/pages/article.scss';
 import backArrow from '../assets/images/backArrow.svg';
-import { useHistory } from 'react-router-dom';
 import '../styles/pages/article.scss';
 
 export function Article(props) {
@@ -11,7 +10,7 @@ export function Article(props) {
     return (
         <div className='principal'>
             <div className="imageArticle">
-                <img src={props.img} alt='Enter Image' />
+                <img src={props.img} alt='Article' />
             </div>
             <div className="titleArticle">
                 <h2> {props.title} </h2>

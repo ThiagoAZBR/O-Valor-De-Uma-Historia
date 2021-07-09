@@ -1,7 +1,4 @@
 import menuBar from '../assets/images/menu_bar.svg';
-import backgroundImg from '../assets/images/backgroundImg1.svg';
-import backgroundImg2 from '../assets/images/backgroundImg2.svg';
-import backgroundImg3 from '../assets/images/backgroundImg3.svg';
 import backgroundImgPng from '../assets/images/backgroundImg1.png';
 import backgroundImgPng2 from '../assets/images/backgroundImg2.png';
 import backgroundImgPng3 from '../assets/images/backgroundImg3.png';

@@ -1,9 +1,6 @@
-import { useHistory } from 'react-router-dom';
 import '../styles/components/card.scss';
 
 export function Card(props) {
-
-    const history = useHistory();
 
     return (
         <div className='card' onClick={props.function}>

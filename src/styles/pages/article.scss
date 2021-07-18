@@ -20,21 +20,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 
     > h2 {
         font-size: 2.1rem;
         font-weight: 500;
         font-family: 'Noto Sans', sans-serif;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
         align-self: flex-start;
         margin-bottom: 1.5rem;
     }
     
     > h4 {
         font-family: 'Noto Sans', sans-serif;
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
         font-size: 0.8rem;
         align-self: flex-start;
     }
@@ -44,22 +42,7 @@
         margin-bottom: 2rem;
         height: 2px;
         background-color: black;
-        width: 88%;
-    }
-}
-
-.bodyArticle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10rem;
-
-    > h4 {
-        font-family: 'Noto Sans', sans-serif;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        font-size: 1.05rem;
+        width: 100%;
     }
 }
 

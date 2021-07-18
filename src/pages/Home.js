@@ -40,7 +40,7 @@ export function Home() {
       <h2 id='title'>
         Nossos Artigos
       </h2>
-
+      
       <div className="content">
         <Card
             img={backgroundImgPng3}

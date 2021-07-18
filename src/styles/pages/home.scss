@@ -1,6 +1,7 @@
 .app {
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
 }
 
 .appBar {
@@ -29,4 +30,12 @@
     align-items: center;
     margin-bottom: 3rem;
 
+}
+
+@media (min-width: 450px) {
+    .content {
+        margin-left: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

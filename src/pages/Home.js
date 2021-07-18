@@ -1,6 +1,4 @@
 import menuBar from '../assets/images/menu_bar.svg';
-import backgroundImgPng from '../assets/images/backgroundImg1.png';
-import backgroundImgPng2 from '../assets/images/backgroundImg2.png';
 import backgroundImgPng3 from '../assets/images/backgroundImg3.png';
 import enterImagePng from '../assets/images/enterImage.png';
 import { Card } from '../components/Card';
@@ -26,27 +24,6 @@ export function Home() {
     setTitle('Essas Pessoas Invisíveis merecem ser vistas');
     setDate('jul 16');
     setIndex(1);
-    setShowHome(false);
-  }
-  function getToArticle2() {
-    setImage(enterImagePng);
-    setTitle('Título 2');
-    setDate('jul 16');
-    setIndex(2);
-    setShowHome(false);
-  }
-  function getToArticle3() {
-    setImage(enterImagePng);
-    setTitle('Título 3');
-    setDate('jul 16')
-    setIndex(3);
-    setShowHome(false);
-  }
-  function getToArticle4() {
-    setImage(enterImagePng);
-    setTitle('Título 3');
-    setDate('jul 16');
-    setIndex(4);
     setShowHome(false);
   }
 

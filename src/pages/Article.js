@@ -1,7 +1,6 @@
 import '../styles/pages/article.scss';
 import backArrow from '../assets/images/backArrow.svg';
 import '../styles/pages/article.scss';
-import { RelatoAdelmo1 } from '../articles/RelatoAdelmo1';
 import { PessoasInvisiveis } from '../articles/PessoasInvisiveis';
 
 export function Article(props) {

@@ -21,10 +21,6 @@ export function Home() {
   function getToSettings() {
     history.push('/pages/settings');
   }
-
-  function goToInit() {
-    document.getElementsByClassName('principal').focus();
-  }
   
   function getToArticle0() {
     setImage(ProjetoImg);

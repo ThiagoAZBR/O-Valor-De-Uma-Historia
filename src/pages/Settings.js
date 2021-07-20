@@ -12,7 +12,7 @@ export function Settings() {
         <div className='global'>
             <div className="header">
                 <button onClick={getToHome}>
-                    <img src={closeButton} alt="Close button" />
+                    <img id='closeButton' src={closeButton} alt="Close button" />
                 </button>
             </div>
             <div className='settings'>

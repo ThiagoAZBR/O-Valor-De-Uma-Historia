@@ -2,9 +2,16 @@ import '../styles/pages/article.scss';
 import backArrow from '../assets/images/backArrow.svg';
 import '../styles/pages/article.scss';
 import { PessoasInvisiveis } from '../articles/PessoasInvisiveis';
+import { ProjetoIntegrador } from '../articles/ProjetoIntegrador';
+import { RelatoAdelmo1 } from '../articles/RelatoAdelmo1';
+import { RelatoAdelmo2 } from '../articles/RelatoAdelmo2';
 
 export function Article(props) {
-
+    
+    function goToInit() {
+        window.scrollTo(0,0);
+    }
+    goToInit();
     function GetToHome() {
         window.location.reload();
     }
@@ -12,8 +19,14 @@ export function Article(props) {
 
     function renderComponent(param) {
         switch(param) {
+            case 0:
+                return <ProjetoIntegrador />
             case 1:
                 return <PessoasInvisiveis />
+            case 2:
+                return <RelatoAdelmo1 />
+            case 3:
+                return <RelatoAdelmo2 />
             default:
                 return 'Ocorreu um erro!'
         }

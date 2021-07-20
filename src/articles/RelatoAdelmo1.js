@@ -1,8 +1,11 @@
 import '../styles/pages/articles/globalArticle.scss';
+import ThiagoImg from '../assets/images/thiagoImg.jpg';
+import PedroImg from '../assets/images/pedroImg.png';
 
 export function RelatoAdelmo1() {
     return (
             <div className="bodyArticle">
+                <img src={ThiagoImg} id='thiagoImg' alt="" />
                 <p id='paragrafo1'>
     Aconteceu no Dia 02 de Julho de 2021
                 </p>
@@ -56,6 +59,21 @@ export function RelatoAdelmo1() {
     nos educar e educar os outros sobre, nós não iremos sair do lugar. Que a educação
     consiga nos libertar e nos fazer crescer como seres humanos.
                 </p>
+
+                <img src={PedroImg} id='pedroImg' alt="" />
+
+                <p id="paragrafo7">
+                Quando falamos de saúde não se trata apenas de ausência de doença. A saúde é a presença do bem estar na vida do indivíduo. É ele se sentir integrado ao meio em que vive, aceito, amado, enfim, feliz.
+                </p>
+
+                <p id="paragrafo8">
+                Vou falar aqui das dificuldades relacionadas à a uma pessoa em situação de rua. A primeira grande questão é que a pessoa que vive em situação de rua tem um risco maior de adquirir doenças: Alimenta-se mal, está submetido a alterações climáticas, dorme mal, compartilha espaços aglomerados e vive sob intenso nível de stress, com medo de ser roubado ou agredido.
+                </p>
+                <p id="paragrafo9">
+                Outra dificuldade é a da percepção do individuo em relação ao que sente. A pessoa que tem problemas de saúde muitas vezes não prioriza tratar-se, por viver numa lógica de sobrevivência. Quando não se sabe o que se vai comer ou onde se vai dormir a noite, tosse, febre e mesmo dor, ficam em segundo plano.
+                </p>
+                <p id="paragrafo10"></p>
+                <p id="paragrafo11"></p>
             </div>
     )
 }

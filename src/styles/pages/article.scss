@@ -8,7 +8,7 @@
 
 .imageArticle {
     width: 100%;
-    height: 35vh;
+    height: 45vh;
 
     > img {
         width: 100%;
@@ -55,13 +55,14 @@
     margin: 0;
     padding-left: 1rem;
     padding-bottom: 0.2rem;
-    left: 0;
+    left: 1;
     width: 100%;
     background-color: white;
     
     .clickBox {
         display: flex;
         align-items: center;
+        cursor: pointer;
         
         > img {
             padding: 1rem;
@@ -81,13 +82,8 @@
         height: 50vh;
         margin-top: 0.8rem;
         > img {
-            width: 65%;
-        }
-    }
-
-    .bottomArticle {
-        .clickBox {
-            margin-left: 20%;
+            width: 60%;
+            max-width: 500px;
         }
     }
 }

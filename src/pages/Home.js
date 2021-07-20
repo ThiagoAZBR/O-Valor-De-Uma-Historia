@@ -1,6 +1,9 @@
 import menuBar from '../assets/images/menu_bar.svg';
 import backgroundImgPng3 from '../assets/images/backgroundImg3.png';
 import enterImagePng from '../assets/images/enterImage.png';
+import AdelmoImg from '../assets/images/foto-adelmo.png';
+import AdelmoImg2 from '../assets/images/foto-adelmo2.png';
+import ProjetoImg from '../assets/images/projetoImg.png';
 import { Card } from '../components/Card';
 import '../styles/pages/home.scss';
 import { useHistory } from 'react-router-dom';
@@ -18,12 +21,38 @@ export function Home() {
   function getToSettings() {
     history.push('/pages/settings');
   }
+
+  function goToInit() {
+    document.getElementsByClassName('principal').focus();
+  }
   
+  function getToArticle0() {
+    setImage(ProjetoImg);
+    setTitle('Você já ouviu uma história hoje?');
+    setDate('jul 20');
+    setIndex(0);
+    setShowHome(false);
+  }
+
   function getToArticle1() {
     setImage(enterImagePng);
     setTitle('Essas Pessoas Invisíveis merecem ser vistas');
     setDate('jul 16');
     setIndex(1);
+    setShowHome(false);
+  }
+  function getToArticle2() {
+    setImage(AdelmoImg);
+    setTitle('Relatos de uma visita à Adelmo Part 1');
+    setDate('jul 20');
+    setIndex(2);
+    setShowHome(false);
+  }
+  function getToArticle3() {
+    setImage(AdelmoImg2);
+    setTitle('Relatos de uma visita à Adelmo Part 2');
+    setDate('jul 20');
+    setIndex(3);
     setShowHome(false);
   }
 
@@ -33,7 +62,7 @@ export function Home() {
       <>
       <div className="appBar">
         <button onClick={getToSettings}>
-          <img src={menuBar} alt="Barra de configuração" />
+          <img src={menuBar} id='settingBar' alt="Barra de configuração" />
         </button>
       </div>
       
@@ -42,6 +71,24 @@ export function Home() {
       </h2>
       
       <div className="content">
+        <Card
+            img={ProjetoImg}
+            title='O valor de Uma Historia'
+            date='20 de jul'
+            function={getToArticle0}
+        />
+        <Card
+            img={AdelmoImg}
+            title='Relatos de uma visita à Adelmo Part. 1'
+            date='20 de jul'
+            function={getToArticle2}
+        />
+        <Card
+            img={AdelmoImg2}
+            title='Relatos de uma visita à Adelmo Part. 2'
+            date='20 de jul'
+            function={getToArticle3}
+        />
         <Card
             img={backgroundImgPng3}
             title='Essas Pessoas Invisíveis merecem ser vistas'

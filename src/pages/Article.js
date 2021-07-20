@@ -5,15 +5,20 @@ import { PessoasInvisiveis } from '../articles/PessoasInvisiveis';
 import { ProjetoIntegrador } from '../articles/ProjetoIntegrador';
 import { RelatoAdelmo1 } from '../articles/RelatoAdelmo1';
 import { RelatoAdelmo2 } from '../articles/RelatoAdelmo2';
+import { useContext } from 'react';
+import { projectContext } from '../App';
 
 export function Article(props) {
+
+    const {setShowHome} = useContext(projectContext);
     
     function goToInit() {
         window.scrollTo(0,0);
     }
     goToInit();
     function GetToHome() {
-        window.location.reload();
+        setShowHome(true);
+        goToInit();
     }
     const paramIndex = props.index;
 

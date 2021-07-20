@@ -72,8 +72,6 @@ export function RelatoAdelmo1() {
                 <p id="paragrafo9">
                 Outra dificuldade é a da percepção do individuo em relação ao que sente. A pessoa que tem problemas de saúde muitas vezes não prioriza tratar-se, por viver numa lógica de sobrevivência. Quando não se sabe o que se vai comer ou onde se vai dormir a noite, tosse, febre e mesmo dor, ficam em segundo plano.
                 </p>
-                <p id="paragrafo10"></p>
-                <p id="paragrafo11"></p>
             </div>
     )
 }

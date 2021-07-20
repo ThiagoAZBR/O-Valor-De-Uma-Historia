@@ -7,12 +7,13 @@ import ProjetoImg from '../assets/images/projetoImg.png';
 import { Card } from '../components/Card';
 import '../styles/pages/home.scss';
 import { useHistory } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Article } from './Article';
+import { projectContext } from '../App';
 export function Home() {
   
   const history = useHistory();
-  const [showHome, setShowHome] = useState(true);
+  const {showHome, setShowHome} = useContext(projectContext);
   const [img, setImage] = useState('');
   const [title, setTitle] = useState('');
   const [date, setDate] = useState('');

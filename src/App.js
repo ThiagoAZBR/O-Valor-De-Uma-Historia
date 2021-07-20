@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext, useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Article } from './pages/Article';
 import { Home } from './pages/Home';
@@ -8,9 +8,10 @@ import './styles/global.scss';
 export const projectContext = createContext({});
 
 function App() {
+  const [showHome, setShowHome] = useState(true);
   return (
     <projectContext.Provider value={{
-
+      showHome, setShowHome
     }} >
       <BrowserRouter>
         <Switch>
